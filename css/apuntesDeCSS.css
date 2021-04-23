@@ -1,0 +1,47 @@
+p {
+    color: green;
+    font-size: 20px;
+    background-color: lightblue;
+
+}
+
+.parrafito {
+    color: purple
+}
+
+#especial {
+    font-style: italic;
+}
+
+/* pseudoclases y pseudoelementos */
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+/* pseudoclases definen el estilo de un estado*/
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color: red;
+}
+
+/* pseudoelementos define el estilo de una parte especifica de un elemento*/
+
+.main-nav__item a::after {
+    content: " | ";
+}
