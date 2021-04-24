@@ -1,0 +1,26 @@
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: inherit;
+}
+
+/* combinadores */
+
+ div + p { /* le aplica los estilos a los elementos p que esten cercanos a un elemento div */
+    color: red;
+}
+
+ div ~ p { /* le aplica los estilos a los elementos p que esten dentro de la misma etiqueta que cualquier elemento div */
+    color: red;
+}
+
+ div p { /* le aplica los estilos a todos los elementos p que esten dentro del elemento div .descendiente*/
+    color: red;
+}
+
+ div > p { /* le aplica los estilos a los elementos p que esten inmediatamente dentro del elemento div .hijo*/
+    color: red;
+}
