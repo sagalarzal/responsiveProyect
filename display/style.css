@@ -1,0 +1,20 @@
+.block-element {
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* display block usa todo el espacio disponible */
+.nav {
+    background-color: peachpuff;
+    padding: 20 px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

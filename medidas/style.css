@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; /*el truco es colocar el font size de 62.5% para que un rem = 10px*. Esto y colocar el *{} */
+}
+
+main {
+    width: 100vw; /* me produce error, usar con cuidado*/
+    height: 100vh;
+    background-color: rgb(133, 105, 133);
+}
+
+body {
+    font-size: 20px;
+}
+
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    height: 500px; /*puede tenr min y max sin tener un height inicial*/
+    background-color: rgb(207, 181, 207);
+    margin: 0 auto;
+}
+
+.text-container {
+    font-size: 1.5em; /*1.5 veces el tamanio del padre directo*/
+}
+.text-container div {
+    font-size: 3em;
+} /* el fefecto se acumula y se multiplica*/
+.text-container-rem {
+    font-size: 0.5rem; /*0.5 veces el tamanio root que en este caso es el html*/
+}
