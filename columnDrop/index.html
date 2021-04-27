@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+        <div style="order:6;">
+            <picture>
+                <source media="(min-width:1300px)" srcset="./imgs/large.jpg">
+                <source media="(min-width:1000px)" srcset="./imgs/medium.jpg">
+                <!--deben colocarse en orden descendente. usar width 100% casi siempre-->
+                <img src="./imgs/small.jpg" alt="Imagen de ejemplo, varia la resoluci[on segun el tamanio de la pantalla">
+            </picture>
+            <form action="">
+                <label for="name">
+                    <span>Cual es tu nombre?</span>
+                    <input type="text" name="" id="name">
+                </label>
+                <label for="started-studying">
+                    <span>Que dia comenzaste con platzi?</span>
+                    <input type="date" name="" id="started-studying">
+                </label>
+                <label for="time-to-study">
+                    <span>A que hora estudias?</span>
+                    <input type="time" name="" id="time-to-study">
+                </label>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
